@@ -34,7 +34,7 @@ if [[ ! $m =~ ^[0-9]+$ ]] || [[ $m -lt 1 ]] || [[ $m -gt 12 ]]
         exit 1
 fi
 
-# Requesting the day
+# Requesting the day 
 read -p "Please provide the day: " d
 
 # Checking if input is correct, positive integer including 0
