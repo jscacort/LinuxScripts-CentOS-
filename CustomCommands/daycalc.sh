@@ -59,5 +59,6 @@ fi
 
 # Extracting the day of the valid month
 day=$(cal $m $y | awk -v day=$d 'BEGIN {OFS="\t"} {for (i=1; i<=NF; i++) if ($i == day) {print NR, i}}' | awk 'NR==1 {print $2}' | awk 'BEGIN {dayNames["1"]="Sunday"; dayNames["2"]="Monday"; dayNames["3"]="Tuesday"; dayNames["4"]="Wednesday"; dayNames["5"]="Thursday"; dayNames["6"]="Friday"; dayNames["7"]="Saturday"} {print dayNames[$1]}')
+echo 
 echo "The day of the month is: $day"
 echo "Thank you, Bye"
