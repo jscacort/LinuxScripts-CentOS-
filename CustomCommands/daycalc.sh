@@ -5,7 +5,7 @@
 # Author    : Juan Cortes
 # Date      : Jan 3, 2024
 
-# Instructions
+# Instructions 
 echo "This script will give you the day of the week that you request"
 echo "For example, you can find out the First day of Spring of March 20th on 1996"
 echo "The program will ask you the day/month/year"
@@ -20,7 +20,6 @@ if [[ ! $y =~ ^[0-9]+$ ]]
         echo "Exiting datecalculator ..."
         exit 1
 fi
-
 
 # Requesting the month
 read -p "Please provide the month: " m
